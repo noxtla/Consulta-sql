@@ -1,0 +1,24 @@
+Ya debes tener la conexión y una tabla creada con registros
+
+•	Necesitamos dos objetos
+o	PreparedStatement ps declaracionPreparada
+o	 ResultSet rs conjuntoResultante
+
+•	Necesitamos un try catch
+o	Dentro del try
+o	Ps = conexión.preparedStatement(“AQUÍ VA LA CONSULTA”)
+o	Rs = ps.executeQuery.
+o	Ejecutamos el query
+
+•	Mostrando resultados
+o	Para mostrar resultados necesitas un while 
+o	En este caso solo hay uno 
+o	Con un if es suficiente 
+o	If ( rs.next)
+o	Shoe message dialog
+o	“nombre” + rs.getString(“campoDataBase”)
+o	“fechaDeNacimiento” +rs.getDate()
+•	Cerrar conexión
+o	Al final del try
+o	Conexión.close();
+o	Para cerrar la conexión 
